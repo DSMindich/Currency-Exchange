@@ -51,15 +51,17 @@
     border-bottom: 3px solid whitesmoke;
 }
 .Chart-bar{
-    grid-row: 2;
     display: flex;
+    grid-row: 2;
     width: 20%;
     color: var(--chartbg);
     background-color: var(--robinblue);
     justify-content: center;
+    align-items: center;
     border-top: 5px solid var(--barborder);
     border-left: 5px solid var(--barborder);
     border-right: 5px solid var(--barborder);
+    font-size: 24px;
 }
 .Chart-bar:hover{
     animation: ColorSwap 4s;
@@ -69,6 +71,10 @@
 .spacer50  {
     height: 50px;
     grid-row: 3
+}
+.NavBuff{
+    grid-row: 1;
+    height: 25px;
 }
 
 a:link{
@@ -86,10 +92,7 @@ a:hover {
 a:active{
     color: whitesmoke
 }
-.NavBuff{
-    grid-row: 1;
-    height: 25px;
-}
+
 /* Animation stuff*/
 @keyframes ColorSwap {
     from  { border-color:whitesmoke;  }
